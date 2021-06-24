@@ -1,0 +1,13 @@
+# Pfam Scans 
+# The aim of the pfam scans is to obtain reliable domain conservation and specific genomic coordinates of the domains 
+
+# press the pfam database 
+hmmpress Pfam-A.hmm
+
+# scan with each protein family sequences 
+hmmscan --domtblout ABC_pfam_tbl -E 1e-15 Pfam-A.hmm ABC_clustered.fasta
+hmmscan --domtblout SMR_pfam_tbl -E 1e-15 Pfam-A.hmm SMR_clustered.fasta 
+hmmscan --domtblout MFS_pfam_tbl -E 1e-15 Pfam-A.hmm MFS_clustered.fasta  
+hmmscan --domtblout MatE_pfam_tbl -E 1e-15 Pfam-A.hmm MatE_clustered.fasta 
+hmmscan --domtblout ACR_pfam_tbl -E 1e-15 Pfam-A.hmm ACR_clustered.fasta 
+

@@ -1,0 +1,34 @@
+# Join E. coli Sequence
+cat a/*.fa > a.combined.fa
+cat b/*.fa > b.combined.fa
+cat c/*.fa > c.combined.fa
+cat d/*.fa > d.combined.fa
+cat e/*.fa > e.combined.fa
+cat f/*.fa > f.combined.fa
+cat g/*.fa > g.combined.fa
+cat h/*.fa > h.combined.fa
+cat i/*.fa > i.combined.fa
+cat k/*.fa > k.combined.fa
+cat l/*.fa > l.combined.fa
+cat m/*.fa > m.combined.fa
+cat n/*.fa > n.combined.fa
+cat o/*.fa > o.combined.fa
+cat p/*.fa > p.combined.fa
+cat q/*.fa > q.combined.fa
+cat r/*.fa > r.combined.fa
+cat s/*.fa > s.combined.fa
+cat t/*.fa > t.combined.fa
+cat u/*.fa > u.combined.fa
+cat v/*.fa > v.combined.fa
+cat w/*.fa > w.combined.fa
+cat x/*.fa > x.combined.fa
+cat y/*.fa > y.combined.fa
+cat z/*.fa > z.combined.fa
+
+cat *.combined.fa > e_coli_ref.fa
+
+# Translate DNA --> AA
+transeq e_coli_ref.fa
+
+
+

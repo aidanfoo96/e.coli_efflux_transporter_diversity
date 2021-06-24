@@ -1,0 +1,26 @@
+# HMMER_Search
+
+hmmsearch --tblout ACR_protein_table --domtblout ACR_protein_table2 ACR_tran.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC_protein_table --domtblout ABC_protein_table2 ABC_tran.hmm e_coli_peptide.fa 
+hmmsearch --tblout ABC2_membrane_3_table --domtblout ABC2_membrane_3_table2 ABC2_membrane_3.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC2_membrane_table --domtblout ABC2_membrane_table2 ABC2_membrane.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC_membrane_2_table --domtblout ABC_membrane_2_table2 ABC_membrane_2.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC_membrane_table --domtblout ABC_membrane_table2 ABC_membrane.hmm e_coli_peptide.fa
+hmmsearch --tblout EamA_protein_table --domtblout EamA_protein_table2 EamA.hmm e_coli_peptide.fa
+hmmsearch --tblout MatE_protein_table --domtblout MatE_protein_table2 MatE.hmm e_coli_peptide.fa
+hmmsearch --tblout MFS_protein_table --domtblout MFS_protein_table2 MFS_1.hmm e_coli_peptide.fa
+hmmsearch --tblout MDR_protein_table --domtblout MDR_protein_table2 Multi_Drug_Res.hmm e_coli_peptide.fa
+
+hmmsearch --tblout ACR_protein_table_ga --domtblout ACR_protein_table2_ga -A ACR --cut_ga ACR_tran.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC_protein_table_ga --domtblout ABC_protein_table2_ga -A ABC --cut_ga ABC_tran.hmm e_coli_peptide.fa 
+hmmsearch --tblout ABC2_membrane_3_table_ga --domtblout ABC2_membrane_3_table2_ga --cut_ga ABC2_membrane_3.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC2_membrane_table_ga --domtblout ABC2_membrane_table2_ga --cut_ga ABC2_membrane.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC_membrane_2_table_ga --domtblout ABC_membrane_2_table2_ga --cut_ga ABC_membrane_2.hmm e_coli_peptide.fa
+hmmsearch --tblout ABC_membrane_table_ga --domtblout ABC_membrane_table2_ga --cut_ga ABC_membrane.hmm e_coli_peptide.fa
+hmmsearch --tblout EamA_protein_table_ga --domtblout EamA_protein_table2_ga -A EamA --cut_ga EamA.hmm e_coli_peptide.fa
+hmmsearch --tblout MatE_protein_table_ga --domtblout MatE_protein_table2_ga -A MatE --cut_ga MatE.hmm e_coli_peptide.fa
+hmmsearch --tblout MFS_protein_table_ga --domtblout MFS_protein_table2_ga -A MFS --cut_ga MFS_1.hmm e_coli_peptide.fa
+hmmsearch --tblout MDR_protein_table_ga --domtblout MDR_protein_table2_ga -A MDR --cut_ga Multi_Drug_Res.hmm e_coli_peptide.fa
+
+
+

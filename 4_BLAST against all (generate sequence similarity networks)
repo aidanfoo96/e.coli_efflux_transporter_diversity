@@ -1,0 +1,18 @@
+BLAST against all (sequence similarity) 
+
+# make blast db for clustered sequences 
+
+makeblastdb -in ABC_clustered.fasta -dbtype prot
+makeblastdb -in MFS_clustered.fasta -dbtype prot
+makeblastdb -in MatE_clustered.fasta -dbtype prot
+makeblastdb -in SMR_clustered.fasta -dbtype prot
+makeblastdb -in ACR_clustered.fasta -dbtype prot
+
+# Blastp against the databases
+
+blastp -query ABC_clustered.fasta -db ABC_clustered.fasta -out ABC_clustered_BLAST.csv -outfmt 6
+blastp -query MFS_clustered.fasta -db MFS_clustered.fasta -out MFS_clustered.csv -outfmt 6
+blastp -query MatE_clustered.fasta -db MatE_clustered.fasta -out MatE_clustered.csv -outfmt 6
+blastp -query SMR_clustered.fasta -db SMR_clustered.fasta -out SMR_clustered.csv -outfmt 6
+blastp -query ACR_clustered.fasta -db ACR_clustered.fasta -out ACR_clustered.csv -outfmt 6
+

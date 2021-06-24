@@ -1,0 +1,25 @@
+MrBayesScript2 
+
+mb; execute ABC_cluster1_40_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=100000000 printfreq=1000 samplefreq=1000 nchains=4 savebrlens=yes starttree=random filename=ABC_cluster1_trim2_tree4.out; sumt; quit
+
+mb; execute ABC_cluster2_40_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=10000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=ABC_cluster2_trim_tree.out; sumt; quit
+
+mb; execute ABC_cluster3_40_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=10000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=ABC_cluster3_trim_tree.out; sumt; quit
+
+mb; execute ABC_cluster4_40_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=10000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=ABC_cluster4_trim_tree.out; sumt; quit
+
+mb; execute ABC_cluster5_40_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=1000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=ABC_cluster5_trim_tree.out; sumt; quit
+
+mb; execute ABC_cluster6_40_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=10000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=ABC_cluster6_trim_tree.out; sumt; quit
+
+mb; execute ABC_cluster6_40_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=10000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=ABC_cluster6_trim_tree.out; sumt; quit
+
+mb; execute ACR_clustered_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=1000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=ACR_trim_tree.out; sumt; quit
+
+mb; execute EamA_clustered_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=1000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=EamA_trim_tree.out; sumt; quit
+
+mb; execute MatE_clustered_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=1000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=MatE_trim_tree.out; sumt; quit
+
+mb; execute MDR_clustered_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=1000000 printfreq=1000 samplefreq=500 nchains=4 savebrlens=yes starttree=random filename=MDR_trim_tree.out; sumt; quit
+
+mb; execute MFS_cluster1_10_ng_trim.fasta.nxs; prset aamodelpr=mixed; lset rates=gamma Ngammacat=4; set autoclose=yes; mcmc ngen=50000000 printfreq=1000 samplefreq=1000 nchains=4 savebrlens=yes starttree=random filename=MFS_trim_tree4.out; sumt; quit

@@ -1,0 +1,12 @@
+# USEARCH Script
+
+usearch -cluster_fast ABC_pep_hits.fasta -id 0.9 -centroids ABC_clustered.fasta -uc clusters.uc
+
+usearch -cluster_fast MFS_pep_hits.fasta -id 0.9 -centroids MFS_clustered.fasta -uc MFS_clusters.uc
+
+usearch -cluster_fast SMR_pep_hits.fasta -id 0.9 -centroids SMR_clustered.fasta -uc SMR_clusters.uc
+
+usearch -cluster_fast ACR_pep_hits.fasta -id 0.9 -centroids ACR_clustered.fasta -uc ACR_clusters.uc
+
+usearch -cluster_fast MatE_pep_hits.fasta -id 0.9 -centroids MatE_clustered.fasta -uc MatE_clusters.uc
+

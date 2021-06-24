@@ -1,0 +1,9 @@
+# interpro annotations 
+
+./interproscan.sh -i ABC_clustered.fasta -f tsv -dp
+./interproscan.sh -i MFS_clustered.fasta -f tsv -dp
+./interproscan.sh -i MatE_clustered.fasta -f tsv -dp
+./interproscan.sh -i EamA_clustered.fasta -f tsv -dp
+./interproscan.sh -i MDR_clustered.fasta -f tsv -dp
+./interproscan.sh -i ACR_clustered.fasta -f tsv -dp
+

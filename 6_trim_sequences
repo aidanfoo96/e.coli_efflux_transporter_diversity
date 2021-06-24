@@ -1,0 +1,18 @@
+Trim Sequences
+
+trimAl/source/trimal -in cluster_sequences/no_trim/ABC_cluster1_40_ng.fasta -out cluster_sequences/trim/ABC_cluster1_40_ng_trim.fasta -automated1
+trimAl/source/trimal -in cluster_sequences/no_trim/ABC_cluster2_40_ng.fasta -out cluster_sequences/trim/ABC_cluster2_40_ng_trim.fasta -automated1
+trimAl/source/trimal -in cluster_sequences/no_trim/ABC_cluster3_40_ng.fasta -out cluster_sequences/trim/ABC_cluster3_40_ng_trim.fasta -automated1
+trimAl/source/trimal -in cluster_sequences/no_trim/ABC_cluster4_40_ng.fasta -out cluster_sequences/trim/ABC_cluster4_40_ng_trim.fasta -automated1
+trimAl/source/trimal -in cluster_sequences/no_trim/ABC_cluster5_40_ng.fasta -out cluster_sequences/trim/ABC_cluster5_40_ng_trim.fasta -automated1
+trimAl/source/trimal -in cluster_sequences/no_trim/ABC_cluster6_40_ng.fasta -out cluster_sequences/trim/ABC_cluster6_40_ng_trim.fasta -automated1
+
+trimal/source/trimal -in cluster_sequences/no_trim/MFS_cluster1_10_ng.fasta -out cluster_sequences/trim/MFS_cluster1_10_ng_trim.fasta -automated1
+
+trimAl/source/trimal -in cluster_sequences/ACR_clustered_aligned.fasta -out cluster_sequences/trim/ACR_clustered_trim.fasta -automated1
+
+trimAl/source/trimal -in cluster_sequences/MatE_clustered_aligned.fasta -out cluster_sequences/trim/MatE_clustered_trim.fasta -automated1
+
+trimAl/source/trimal -in cluster_sequences/EamA_clustered_aligned.fasta -out cluster_sequences/trim/EamA_clustered_trim.fasta -automated1
+
+trimAl/source/trimal -in cluster_sequences/MDR_clustered_aligned.fasta -out cluster_sequences/trim/MDR_clustered_trim.fasta -automated1

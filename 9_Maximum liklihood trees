@@ -1,0 +1,4 @@
+# Maximum liklihood trees
+
+iqtree -s 'ABC_cluster1_40_ng_trim2.fa(1).nxs' -m TEST -bb 10000
+iqtree -s 'MFS_cluster1_10_ng_trim.fasta.nxs' -m TEST -bb 10000
