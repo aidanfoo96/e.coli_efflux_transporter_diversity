@@ -1,0 +1,50 @@
+cluster_1_60 <- as_tibble(read_csv("ABC_node_list_eval-60_Clust1.csv"))
+cluster_1_60_tidy <- tidy_import(cluster_1_60)
+ABC_cluster_1_60 <- extract_sequences(cluster_1_60_tidy)
+writeFASTAclust(ABC_cluster_1_60, "4_Clustered_Sequences/ABC_cluster1_60.fasta")
+
+cluster_1_50_ng <- read_csv("ABC_node_list_eval-50__Cluster1_nogroup.csv")
+cluster_1_50_ng_tidy <- tidy_import(cluster_1_50_ng)
+ABC_cluster_1_50_ng <- extract_sequences(cluster_1_50_ng_tidy)
+writeFASTAclust(ABC_cluster_1_50_ng, "4_Clustered_Sequences/ABC_cluster1_50_ng.fasta")
+
+cluster_1_40_ng <- read_csv("ABC_node_list_eval-40_nogroup_Cluster1.csv")
+cluster_1_40_ng_tidy <- tidy_import(cluster_1_40_ng)
+ABC_cluster_1_40_ng <- extract_sequences(cluster_1_40_ng_tidy)
+writeFASTAclust(ABC_cluster_1_40_ng, "4_Clustered_Sequences/ABC_cluster1_40_ng.fasta")
+
+cluster_2_40_ng <- read_csv("ABC_node_list_eval-40_Cluster2_nogroup.csv")
+cluster_2_40_ng_tidy <- tidy_import(cluster_2_40_ng)
+ABC_cluster_2_40_ng <- extract_sequences(cluster_2_40_ng_tidy)
+writeFASTAclust(ABC_cluster_2_40_ng, "4_Clustered_Sequences/ABC_cluster2_40_ng.fasta")
+
+cluster_3_40_ng <- read_csv("ABC_node_list_eval-40_Cluster3_nogroup.csv ")
+cluster_3_ng_tidy <- tidy_import(cluster_3_40_ng)
+ABC_cluster_3_40_ng <- extract_sequences(cluster_3_ng_tidy)
+writeFASTAclust(ABC_cluster_3_40_ng, "4_Clustered_Sequences/ABC_cluster3_40_ng.fasta")
+
+cluster_1_55_ng <- read_csv("ABC_node_list_eval-55_Cluster1_nogroup.csv")
+cluster_1_55_ng_tidy <- tidy_import(cluster_1_55_ng)
+ABC_cluster_1_55_ng <- extract_sequences(cluster_1_55_ng_tidy)
+writeFASTAclust(ABC_cluster_1_55_ng, "4_Clustered_Sequences/ABC_cluster1_55_ng.fasta")
+
+cluster_2_55_ng <- read_csv("ABC_node_list_eval-55_nogroup_Cluster2.csv")
+cluster_2_55_ng_tidy <- tidy_import(cluster_2_55_ng)
+ABC_cluster_2_55_ng <- extract_sequences(cluster_2_55_ng_tidy)
+writeFASTAclust(ABC_cluster_2_55_ng, "4_Clustered_Sequences/ABC_cluster2_55_ng.fasta")
+
+cluster1_ABC_efflux <- read_csv("cyto_outs/ACB_clustered_efflux_transporters.csv")
+cluster1_ABC_efflux <- tidy_import(cluster1_ABC_efflux)
+cluster1_ABC_efflux <- extract_sequences(cluster1_ABC_efflux)
+writeFASTAclust(cluster1_ABC_efflux, "4_Clustered_Sequences/cluster1_ABC_efflux.fasta")
+writeFASTAclust(cluster1_ABC_efflux, "cyto_outs//cluster1_ABC_efflux.fasta")
+
+cluster2_ABC_efflux <- read_csv("cyto_outs/ABC_transorters_cluster2.csv")
+cluster2_ABC_efflux <- tidy_import(cluster2_ABC_efflux)
+cluster2_ABC_efflux <- extract_sequences(cluster2_ABC_efflux)
+writeFASTAclust(cluster2_ABC_efflux, "4_Clustered_Sequences/cluster2_ABC_efflux.fasta")
+
+cluster3_ABC_efflux <- read_csv("cyto_outs/cluster_3_efflux_transporter_ABC.csv")
+cluster3_ABC_efflux <- tidy_import(cluster3_ABC_efflux)
+cluster3_ABC_efflux <- extract_sequences(cluster3_ABC_efflux)
+writeFASTAclust(cluster3_ABC_efflux, "4_Clustered_Sequences/cluster3_ABC_efflux.fasta")
